@@ -108,7 +108,7 @@ section h1 {
     align-items: center;
 }
 
-.header-img {
+.header-img { /*I wasn't sure what I was doing wrong to not get my image to go all the way across the page.*/
     display: flex;
     margin: 0;
     justify-content: flex-start;
