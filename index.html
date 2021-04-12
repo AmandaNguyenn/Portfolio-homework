@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,83 +15,92 @@
 
 
 <body>
-       <header> <!--Header section with the navigavtion bar. I couldn't figure out how to connect the links to move to certain sections on the page...-->
+    <header>
+        <!--Header section with the navigavtion bar. I couldn't figure out how to connect the links to move to certain sections on the page...-->
         <h1> Amanda Nguyen</h1>
         <nav class="navbar">
             <ul>
-                <a href="#">About Me</a>
-                <a href="#">Work</a>
-                <a href="#">Contact</a>
-                <a href="#">Resume</a>
+                <a href="#about-me">About Me</a>
+                <a href="#work">Work</a>
+                <a href="#contact-me">Contact</a>
+                <a href="./assets/resume/Amanda Nguyen Resume.docx" download>Resume</a>
             </ul>
         </nav>
     </header>
-    
-<main>
-    <!--This is the second section of the page. Has a background image and a subtitle-->
-    <section class="header-img">
-        <img src="./assets/images/rm281-adj-065-l.png" alt="color swatches">
-        <h1>Nice to Meet you</h1>
-    </section>
-    <section class="about-me">
-        <h2>About Me</h2>
-        <div>
-            <p>
-                My name is Amanda Nguyen, and I enjoy meeting new people and learning new things. I am currently a student at Bellevue College, majoring in Information Science, while also taking a coding bootcamp course at the University of Washington. Prior, I worked as a Dental Assistant. I live in Kirkland, WA and am a mother to a 1 year old Lab. In my free-time, I enjoy cooking, reading, and hiking.
-            </p>
-            <p>
-                I am a team player. I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time
-            </p>
-        </div>
-    </section>
-<section class="work">
-       <h2>Work</h2>
-<div> <!--Each image is in it's own section with a header floating on top of the image. I did it this way because it would be easier to manipulate-->
-  <figure>   
-       <section id="bartender">
-        <h3>Bartender</h3>
-            <img src="./assets/images/photo-1514933651103-005eec06c04b.jfif" alt="bartender">
-        </section>
-</div>
-<figure>  
-        <h3>Analyst</h3>
-        <section id="analyst">
-            <img src="./assets/images/photo-1522071820081-009f0129c71c.jfif" alt="business-analyst">
-        </section>
-</figure>   
-<figure>
-    <h3>Baker</h3>
-    <section id="baker">
-        <img src="./assets/images/photo-1517433670267-08bbd4be890f.jfif" alt="bread-bakery">
-    </section>
-</figure>   
-<figure>      
-        <h3>Server</h3>
-        <section id="server">
-            <img src="./assets/images/photo-1552566626-52f8b828add9.jfif" alt="server">
-        </section>
-</figure>
-<figure>
-        <h3>Dental Assistant</h3>
-        <section id="assistant">
-            <img src="./assets/images/photo-1616391182219-e080b4d1043a.jfif" alt="dental-assistant">
-        </section>
-</figure>
 
-</section>
-</main>
+    <main>
+        <!--This is the second section of the page. Has a background image and a subtitle-->
+        <div id="header-img">
+            <img id="image" src="./assets/images/swatches.png" alt="tan color swatches">
+            <div id="title">Front End Developer</div>
+        </div>
+        <section class="about" id="about-me">
+            <h2>About Me</h2>
+            <div>
+                <p>
+                    My name is Amanda Nguyen, and I enjoy meeting new people and learning new things. I am currently a
+                    student at Bellevue College, majoring in Information Science, while also taking a coding bootcamp
+                    course at the University of Washington. Prior, I worked as a Dental Assistant. I live in Kirkland,
+                    WA and am a mother to a 1 year old Lab. In my free-time, I enjoy cooking, reading, and hiking.
+                </p>
+                <p>
+                    I am a team player. I am outgoing, dedicated, and open-minded. I get across to people and adjust to
+                    changes with ease. I believe that a person should work on developing their professional skills and
+                    learning new things all the time
+                </p>
+            </div>
+        </section>
+        
+        <div class="row">
+            <section class="work" id="work">
+                <h2>Work</h2>
+                <!--Each image is in it's own section with a header floating on top of the image. I did it this way because it would be easier to manipulate-->
+                <div class="content">
+                    <figure>
+                        <section id="pawPair">
+                            <h3>PawPairs</h3>
+                            <a href="https://amandanguyenn.github.io/PawPair/"> <img src="./assets/images/pawpair.png"
+                                    alt="paw-pair"></a>
+                        </section>
+                        <figure>
+                            <section id="work-day-scheduler">
+                                <h3>Work Day Scheduler</h3>
+                                <a href="https://amandanguyenn.github.io/work-day-scheduler/"><img
+                                        src="./assets/images/work-day-scheduler.PNG" alt="work-day-scheduler"></a>
+                            </section>
+                        </figure>
+                        <figure>
+                            <section id="api-code-quiz">
+                                <h3>API Code Quiz</h3>
+                                <a href="https://amandanguyenn.github.io/api-code-quiz/"><img
+                                        src="./assets/images/code-quiz.PNG" alt="code-quiz"></a>
+                            </section>
+                        </figure>
+                        <figure>
+                            <section id="password-generator">
+                                <h3>Password Generator</h3>
+                                <a href="https://amandanguyenn.github.io/password-generator/"><img
+                                        src="./assets/images/password-generator.PNG" alt="password-generator"></a>
+                            </section>
+                        </figure>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 
 
-<footer> <!--Footer has a heading and an unstyled list for links-->
+<footer>
+    <!--Footer has a heading and an unstyled list for links-->
     <h2>Contact Me</h2>
-    <nav class="footer">
+    <nav class="footer" id="contact-me">
         <ul>
             <a href="#">360.708.0921</a>
-            <a href="#">amvnguyen95@gmail.com</a>
+            <a href="mailto:amvnguyen95@gmail.com">amvnguyen95@gmail.com</a>
             <a href="https://github.com/AmandaNguyenn">GitHub</a>
             <a href="https://www.linkedin.com/in/amanda-nguyen-924264179/">LinkedIn</a>
         </ul>
     </nav>
 </footer>
+
 </html>
