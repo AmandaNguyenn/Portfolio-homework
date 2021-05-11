@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color:rgba(200, 214, 229,1.0);
+    background: linear-gradient(to bottom, #bdc3c7, #2c3e50);
     min-height: 100vh;
     line-height: 1.5;
 }
@@ -15,8 +15,11 @@ body {
 header {
     min-height: 100px;
     display: flex;
-    background-color:rgba(34, 47, 62,1.0) ;
     justify-content: space-between;
+}
+
+.header-img {
+    background-image: url(../assets/images/swatches.png)
 }
 
 .navbar {
@@ -30,11 +33,11 @@ nav ul {
     min-width: 300px;
     list-style: none;
     font-size: 30px;
-  }
+}
 
 nav a {
     font-size: 24px;
-    color: rgba(248, 194, 145,1.0);
+    color:rgba(12, 36, 97,1.0);
     margin-right: 10px;
     border-bottom: 4px solid;
     text-decoration: unset;
@@ -46,27 +49,22 @@ main {
 }
 
 #header-img { 
-display: flex;
-flex-wrap: wrap;
-width: 100%;
-justify-content:flex-start;
-object-fit: fill;
+    display: flex;
 }
 
 
 #title  {
-  z-index: 100;
-  position: absolute;
-  color: rgba(12, 36, 97,1.0);
-  font-size: 50px;
-  font-weight: bold;
-  right: 50px;
-  bottom: 650px;
-  }
+    position: absolute;
+    color: rgba(12, 36, 97,1.0);
+    font-size: 50px;
+    font-weight: bold;
+    right: 400px;
+    bottom: 610px;
+}
 
 h1 {
     font-size: 60px;
-    background-color:rgba(248, 194, 145,1.0);
+    color: rgba(12, 36, 97,1.0);
     width: 55%;
     margin: 10px 10px 10px 0;
     position: relative;
@@ -98,7 +96,6 @@ h2 {
     display: flex;
 }
 
-  
 
 figure h3 {
     color: rgba(12, 36, 97,1.0);
